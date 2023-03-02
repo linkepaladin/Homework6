@@ -8,6 +8,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
         public  static void task1() {
             for (int i = 1; i <= 10; i++) {
@@ -48,6 +49,15 @@ public class Main {
             int total = 0;
             int bank = 29000;
             for (int i = 1; i < 13; i++) {
+                total = total + bank;
+                System.out.println("Месяц " + i + " " + total);
+            }
+        }
+        public static void task9() {
+            int total = 0;
+            int bank = 29000;
+            for (int i = 1; i < 13; i++) {
+                total = total + total/100;
                 total = total + bank;
                 System.out.println("Месяц " + i + " " + total);
             }
