@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
         public  static void task1() {
             for (int i = 1; i <= 10; i++) {
@@ -30,7 +31,7 @@ public class Main {
         }
         public static void task5() {
             for (int i = 1904; i <= 2096; i = i + 4) {
-                System.out.println(i);
+                System.out.println("Это високосный год" + i);
             }
         }
         public static void task6() {
@@ -41,6 +42,14 @@ public class Main {
         public static void task7() {
             for (int i = 1; i <= 512; i = i * 2) {
                 System.out.println(i);
+            }
+        }
+        public static void task8() {
+            int total = 0;
+            int bank = 29000;
+            for (int i = 1; i < 13; i++) {
+                total = total + bank;
+                System.out.println("Месяц " + i + " " + total);
             }
         }
 }
