@@ -9,6 +9,7 @@ public class Main {
         task7();
         task8();
         task9();
+        task10();
     }
         public  static void task1() {
             for (int i = 1; i <= 10; i++) {
@@ -60,6 +61,11 @@ public class Main {
                 total = total + total/100;
                 total = total + bank;
                 System.out.println("Месяц " + i + " " + total);
+            }
+        }
+        public static void task10() {
+            for (int i = 1; i < 11; i++) {
+                System.out.println("2 * " + i + " = " + i * 2);
             }
         }
 }
