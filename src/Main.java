@@ -58,5 +58,21 @@ public class Main {
             deposit1 = deposit1 + increaseRate;
         }
         System.out.println("Месяц " + month1 + ", сумма накоплений " + deposit1 + " рублей");
+
+        //task 5
+
+        System.out.println("Задача 5");
+
+        int deposit2 = 15000;
+        int goal2 = 12_000_000;
+        int month2 = 1;
+        while (deposit2 <= goal2) {
+            month2++;
+            int increaseRate2 = (deposit2 * 7) / 100;
+            deposit2 = deposit2 + increaseRate2;
+            if (month2 % 6 == 0) {
+                System.out.println("Месяц " + month2 + ", сумма накоплений " + deposit2 + " рублей");
+            }
+        }
     }
 }
