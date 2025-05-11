@@ -11,7 +11,7 @@ public class Main {
         while (savings <= goal) {
             savings = savings + deposit;
             month = month + 1;
-            //System.out.println("Месяц " + month + " сумма накоплений равна " + savings + " рублей");
+            System.out.println("Месяц " + month + " сумма накоплений равна " + savings + " рублей");
         }
 
         // task 2
@@ -72,6 +72,22 @@ public class Main {
             deposit2 = deposit2 + increaseRate2;
             if (month2 % 6 == 0) {
                 System.out.println("Месяц " + month2 + ", сумма накоплений " + deposit2 + " рублей");
+            }
+        }
+
+        // task 6
+
+        System.out.println("Задание 6");
+
+        int deposit3 = 15000;
+        int month3 = 1;
+        int yearsInMonth = 12 * 9;
+        while (month3 <= yearsInMonth) {
+            month3++;
+            int increaseRate3 = (deposit3 * 7) / 100;
+            deposit3 = deposit3 + increaseRate3;
+            if (month3 % 6 == 0) {
+                System.out.println("Месяц " + month3 + ", сумма накоплений " + deposit3 + " рублей");
             }
         }
     }
