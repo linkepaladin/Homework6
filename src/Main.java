@@ -11,9 +11,27 @@ public class Main {
         while (savings <= goal) {
             savings = savings + deposit;
             month = month + 1;
-            if (savings >= goal) {
-                System.out.println("Месяц " + month + " сумма накоплений равна " + savings + " рублей");
-            }
+            System.out.println("Месяц " + month + " сумма накоплений равна " + savings + " рублей");
         }
+
+        // task 2
+
+        System.out.println("Задача 2");
+
+        int a = 1;
+        while (a <= 10) {
+            System.out.print(a + " ");
+            a++;
+        }
+        System.out.println();
+        for (int i = 10; i > 0; i--) {
+            System.out.print(i + " ");
+        }
+
+        // task 3;
+
+        System.out.println("Задача 3");
+
+
     }
 }
