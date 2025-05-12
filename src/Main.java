@@ -90,5 +90,16 @@ public class Main {
                 System.out.println("Месяц " + month3 + ", сумма накоплений " + deposit3 + " рублей");
             }
         }
+
+        //task 7
+
+        System.out.println("Задача 7");
+
+        int friday = 1;
+        int daysInMonth = 31;
+        while (friday <= daysInMonth) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday = friday + 7;
+        }
     }
 }
