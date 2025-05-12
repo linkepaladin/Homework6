@@ -101,5 +101,21 @@ public class Main {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
             friday = friday + 7;
         }
+
+        //task 8
+
+        System.out.println("Задача 8");
+
+        int currentYear = 2025;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+        int cometInterval = 79;
+        int cometAppearanceYear = 0;
+        while (cometAppearanceYear <= endYear) {
+            cometAppearanceYear = cometAppearanceYear + cometInterval;
+            if (cometAppearanceYear >= startYear && cometAppearanceYear <= endYear) {
+                System.out.println(cometAppearanceYear);
+            }
+        }
     }
 }
